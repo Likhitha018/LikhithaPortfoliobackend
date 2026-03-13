@@ -21,7 +21,7 @@ app.post("/contact",(req,res)=>{
 
 const {name,email,message} = req.body
 
-const sql = "INSERT INTO contacts (name,email,message) VALUES (?,?,?)"
+const sql = "INSERT INTO contact (name,email,message) VALUES (?,?,?)"
 
 db.query(sql,[name,email,message],(err,result)=>{
 if(err){
